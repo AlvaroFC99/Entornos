@@ -163,15 +163,15 @@ function Minicell() {
   if (this.yPos <= 40) this.flag = false;
   else if (this.yPos >= 540) this.flag = true;
 
-  if (this.flag == false) this.yPos += 1;
-  else if (this.flag == true) this.yPos -= 1;
+  if (this.flag == false) this.yPos += 12;
+  else if (this.flag == true) this.yPos -= 12;
  };
 
  this.hard = function () {
   if (this.xPos < 0) this.xPos = 800;
   if (this.yPos > 600) this.yPos = 0;
-  this.xPos -= 1;
-  this.yPos += 1;
+  this.xPos -= 13;
+  this.yPos += 13;
  };
 }
 
